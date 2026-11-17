@@ -1,8 +1,41 @@
 {
   "date": "2026-11-17",
-  "checkedAt": "2026-11-17T01:58:16.067865+00:00",
-  "label": "自动收录 · 最近一次检索 2026-11-17 01:58 UTC",
+  "checkedAt": "2026-11-17T03:24:37.699696+00:00",
+  "label": "自动收录 · 最近一次检索 2026-11-17 03:24 UTC",
   "papers": [
+    {
+      "id": "p-09f595b278be258f5a",
+      "title": "User First Intelligence: Three Measurements of Search and AI-Answer Analytics (SEO and GEO/AEO), and a Knowledge-Graph Framework for Query Discovery Beyond Search Volume",
+      "en": "User First Intelligence: Three Measurements of Search and AI-Answer Analytics (SEO and GEO/AEO), and a Knowledge-Graph Framework for Query Discovery Beyond Search Volume",
+      "authors": "Venkata Pagadala",
+      "date": "2026-11-14",
+      "updatedAt": "2026-11-14",
+      "venue": "arXiv（预印本）",
+      "type": "工作论文",
+      "topic": [
+        "AI摘要"
+      ],
+      "public": false,
+      "researchThemes": [
+        "AI中介传播与AI信息中介",
+        "AI摘要与公众意见"
+      ],
+      "relevance": "重点关注",
+      "sourceTier": "预印本（非同行评议）",
+      "abstract": "People say what they want to know in many places besides a search box, and the tools that search and AI-answer optimization (SEO and GEO/AEO) rely on see only part of that demand, through models reported as counts. This paper reports three measurements of such instruments and a framework. On the area-code section of a large US telecom provider's site, two commercial analytics platforms differed on estimated monthly visits by 7.5x to 27.1x (8.6x to 29.9x worldwide); across twelve sections of the domain the ratio ran from 0.20x to 7.24x with no detectable relation to section age, while they agreed on which section is larger in 60 of 66 pairs. On 37,193 reviews of 378 telecom stores linked to a 42,994-node keyword taxonomy, review demand and search volume agreed on branches to a varying degree (Spearman 0.47 to 0.75; 0.91 post hoc) and barely on topics (0.18), on links two blind AI annotators judged two-thirds correct; on the 372 area codes, a public count of Wikipedia requests for each code and vendor volume agreed roughly on ranking (0.45 over 240 articles, gone once keywords matched per code are held constant) and not on magnitudes, predictions fixed first. In one vendor's index of AI answers naming or citing the largest companies of each S&P 500 sector, of four predictions written first, one held, one in direction only and two failed; video and community sites took a median 21% of citation incidences on Google's AI Overviews and AI Mode against 0.6% to 9.2% on four other surfaces, in every sector, and in education answers in each of 13 countries read later. Estimates and sources need measuring per instrument and surface. User First Intelligence (UFI), built on that premise, collects what people ask beyond the website, links it to an industry ontology and scores where an organization does not answer; an open implementation is released, its score not evaluated. No causal claim is made.",
+      "analysisStatus": "待解读",
+      "method": "预印本，研究方法需核对全文。",
+      "question": "依据题名和摘要筛选，研究问题需进一步确认。",
+      "finding": "作者摘要（未核对全文）：People say what they want to know in many places besides a search box, and the tools that search and AI-answer optimization (SEO and GEO/AEO) rely on see only part of that demand, through models reported as counts. This paper reports three measurements of such instruments and a framework. On the area-code section of a large US telecom provider's site, two commercial analytics platforms differed on estimated monthly visits by 7.5x to 27.1x (8.6x to 29.9x worldwide); across twelve sections of the domain the ratio ran from 0.20x to 7.24x with no detectable relation to section age, while they agreed on which section is larger in 60 of 66 pairs. On 37,193 reviews of 378 telecom stores linked to a 42,994-node keyword taxonomy, review demand and search volume agreed on branches to a varying degree (Spearman 0.47 to 0.75; 0.91 post hoc) and barely on topics (0.18), on links two blind AI annotators judged two-thirds correct; on the 372 area codes, a public count of Wikipedia requests for each code and vendor volume agreed roughly on ranking (0.45 over 240 articles, gone once keywords matched per code are held constant) and not on magnitudes, predictions fixed first. In one vendor's index of AI answers naming or citing the largest companies of each S&P 500 sector, of four predictions written first, one held, one in direction only and two failed; video and community sites took a median 21% of citation incidences on Google's AI Overviews and AI Mode against 0.6% to 9.2% on four other surfaces, in every sector, and in education answers in each of 13 countries read later. Estimates and sources need measuring per instrument and surface. User First Intelligence (UFI), built on that premise, collects what people ask beyond the website, links it to an industry ontology and scores where an organization does not answer; an open implementation is released, its score not evaluated. No causal claim is made.",
+      "scope": "arXiv 首次发布 2026-11-14，最新修订 2026-11-14；未核对全文。",
+      "significance": "候选研究；公共讨论属性尚未核查。",
+      "tags": [
+        "自动收录",
+        "预印本",
+        "待精读"
+      ],
+      "url": "https://arxiv.org/abs/2611.19655v1"
+    },
     {
       "id": "c-liu-zhang",
       "title": "用户生成内容的 AI 摘要积极性偏差及其对公众情绪的影响",
