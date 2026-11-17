@@ -61,7 +61,7 @@ INTERDISCIPLINARY_JOURNALS = {
 }
 PEER_REVIEWED_CONFERENCES = ("chi", "cscw", "emnlp", "acl", "icwsm", "webconference")
 TOPIC_PATTERNS = {
-    "AI中介传播与AI信息中介": r"AI[- ]mediated|AI[- ]powered (?:search|communication)|generative (?:search|AI)|large language model|\\bLLM\\b|chatgpt|AI overviews?|intelligent (?:search|agents?)",
+    "AI中介传播与AI信息中介": r"AI[- ]mediated|AI[- ]powered (?:search|communication)|generative (?:search|AI)|large language model|\bLLM\b|chatgpt|AI overviews?|intelligent (?:search|agents?)",
     "AI内容趋同": r"converg|homogen|similarity|diversity|opinion align|narrowing|semantic|standardization|collective creativ",
     "意见气候": r"climate of opinion|spiral of silence|descriptive norms?|normative influence|conformity|majority opinion|public opinion|opinion dynamics",
     "AI摘要与公众意见": r"AI (?:generated )?summari|AI summaries|AI overviews?|information summar|generative summar",
