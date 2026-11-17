@@ -38,6 +38,7 @@ jobs:
           python -m unittest discover -s tests -v
           node --check research_ui.js
           node tests/test_tech_bookmarks.js
+          node tests/test_paperlens_locator.js
       - name: Collect sources and refresh JSON
         run: python scripts/update_feed.py
       - name: Optional Chinese academic review (abstract-grounded)
