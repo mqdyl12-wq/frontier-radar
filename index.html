@@ -106,13 +106,13 @@ async function syncPublishedFeed(){
     validate(data);
     const oldCount=(corpus.papers||[]).length+(corpus.tech||[]).length;
     corpus={date:data.date||corpus.date,label:data.label||corpus.label,
-      papers:mergeByKey(corpus.papers||[],data.papers),
-      tech:mergeByKey(corpus.tech||[],data.tech),
+      papers:mergeByKey((corpus.papers||[]).filter(x=>!(x.tags||[]).includes('自动收录')),data.papers),
+      tech:mergeByKey((corpus.tech||[]).filter(x=>!(x.tags||[]).includes('自动收录')),data.tech),
       opportunities:mergeByKey(corpus.opportunities||[],data.opportunities)};
     try{localStorage.setItem(DATA_STORAGE,JSON.stringify(corpus))}catch{}
     render();
     const newCount=(corpus.papers||[]).length+(corpus.tech||[]).length-oldCount;
-    if(status)status.textContent='已同步：'+(data.checkedAt||data.date||'日期未知')+'；本次新增 '+newCount+' 条。'+(data.issues?.length?' 部分来源获取失败，请核对日志。':'');
+    if(status)status.textContent='已同步：'+(data.checkedAt||data.date||'日期未知')+'；条目净变化 '+(newCount>0?'+':'')+newCount+' 条。'+(data.issues?.length?' 部分来源获取失败，请核对日志。':'');
   }catch(error){
     if(status)status.textContent='自动同步失败（'+error.message+'）：继续使用本地历史资料；可手动导入 JSON。';
   }
