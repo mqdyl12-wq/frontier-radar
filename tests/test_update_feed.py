@@ -17,7 +17,7 @@ CROSSREF = {
          "DOI": "10.9999/example", "created": {"date-time": "2026-11-17T00:00:00Z"},
          "published-online": {"date-parts": [[2026, 11, 17]]},
          "type": "journal-article", "author": [{"given": "A", "family": "Author"}],
-         "container-title": ["Sample Journal"]},
+         "container-title": ["Journal of Computer-Mediated Communication"]},
         {"title": ["Unrelated topic"], "DOI": "10.9999/irrelevant"}
     ]}
 }
@@ -41,6 +41,14 @@ class TestFeed(unittest.TestCase):
         self.assertEqual(len(items), 1)
         self.assertEqual(items[0]["type"], "正式发表")
         self.assertFalse(items[0]["public"])
+        self.assertEqual(items[0]["sourceTier"], "传播学重点／专业期刊")
+        self.assertIn("AI中介传播与AI信息中介", items[0]["researchThemes"])
+
+    def test_journal_quality(self):
+        self.assertEqual(mod.venue_tier("New Media & Society"), "传播学重点／专业期刊")
+        self.assertEqual(mod.venue_tier("Science Advances"), "交叉学科重点期刊")
+        self.assertEqual(mod.venue_tier("Unverified Journal"), "")
+        self.assertEqual(mod.venue_tier("arXiv", "preprint"), "预印本（非同行评议）")
 
     def test_arxiv(self):
         with patch.object(mod, "request", return_value=ARXIV):
