@@ -1,7 +1,7 @@
 {
   "date": "2026-11-17",
-  "checkedAt": "2026-11-17T01:51:22.206870+00:00",
-  "label": "自动收录 · 最近一次检索 2026-11-17 01:51 UTC",
+  "checkedAt": "2026-11-17T01:56:57.285230+00:00",
+  "label": "自动收录 · 最近一次检索 2026-11-17 01:56 UTC",
   "papers": [
     {
       "id": "c-liu-zhang",
@@ -551,7 +551,5 @@
     "Google DeepMind 官方博客",
     "Google AI 官方博客"
   ],
-  "issues": [
-    "Google DeepMind 官方博客: not well-formed (invalid token): line 1, column 0"
-  ]
+  "issues": []
 }
