@@ -1,0 +1,37 @@
+/* PaperLens v2: PDF text anchors, argument pathway, multi-paper intake. */
+.pdfWrap.precise{display:block;overflow:auto;min-height:520px;max-height:calc(100vh - 244px);padding:12px;background:#dfe6e7}
+#pdfjsHost{display:none;width:100%;align-items:center;flex-direction:column;gap:12px}
+.pdfWrap.precise #pdfjsHost{display:flex}
+.pdfWrap.precise #pdfFrame{display:none!important}
+#pdfjsPage{position:relative;flex:0 0 auto;background:#fff;box-shadow:0 8px 24px rgba(20,40,55,.19);max-width:none}
+#pdfjsCanvas{display:block}
+#pdfjsHighlights{pointer-events:none;position:absolute;inset:0;overflow:hidden}
+.pdfHighlight{position:absolute;border-radius:2px;background:rgba(255,192,58,.38);box-shadow:inset 0 0 0 1px rgba(157,106,9,.34);mix-blend-mode:multiply}
+.pdfHighlight.partial{background:rgba(128,172,247,.27);box-shadow:inset 0 0 0 1px rgba(42,100,193,.27)}
+.pdfLocationStatus{font-size:11px;color:#657784;background:#fff;border:1px solid #dce4e7;border-radius:9px;padding:7px 11px;line-height:1.65;width:100%;text-align:center}
+.pdfZoomTools{display:flex;align-items:center;gap:6px}
+.pdfZoomTools .iconBtn{min-width:29px;min-height:29px}
+.pageLink[data-locate]{color:#137d72;border:1px solid #c5e6dd;padding:5px 10px;border-radius:6px;background:#f1faf7}
+.pageLink[data-locate]:hover{background:#e3f4ee;text-decoration:none}
+.argumentMapHeader{padding:20px 23px;background:linear-gradient(115deg,#f2f9f7,#f8f9ff);border:1px solid #dfe9e9;border-radius:14px;margin-bottom:17px}
+.argumentMapHeader h3{font-size:17px;margin:5px 0 9px}.argumentMapHeader p{color:#66798a;font-size:12px;line-height:1.7;margin-bottom:0}
+.mapSectionList{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:11px;margin:18px 0 23px}
+.mapSection{display:flex;flex-direction:column;align-items:flex-start;text-align:left;padding:15px;background:#fff;border:1px solid #e0e8e9;border-radius:12px;min-height:138px;transition:border .18s,transform .18s}
+.mapSection:hover,.mapStep:hover{border-color:#80bcb0;transform:translateY(-1px)}
+.mapIndex{font-family:Georgia,serif;color:#1b827c;font-weight:750;font-size:13px}
+.mapSection b{font-size:14px;margin:10px 0 7px}
+.mapSection small{color:#788995;font-size:11px;line-height:1.65}
+.mapPathTitle{font-weight:750;font-size:13px;margin:16px 0 10px;color:#2d4354}
+.mapPath{display:grid;gap:9px}
+.mapStep{display:flex;align-items:flex-start;gap:11px;background:#fff;border:1px solid #e3e9ec;border-radius:10px;padding:13px 15px;text-align:left}
+.mapStep.done{border-left:3px solid #4da69b}
+.mapStep.empty{opacity:.67;border-left:3px solid #dde4e9}
+.mapStepNumber{display:grid;place-items:center;width:27px;height:27px;flex:0 0 27px;border-radius:50%;background:#e5f5f1;color:#137d72;font-weight:700}
+.mapStep b{display:block;font-size:12px;margin-bottom:5px}
+.mapStep p{font-size:11px;color:#6c7e8e;margin:0;line-height:1.65}
+.mapCoverage{font-size:11px;color:#71848d;margin:0 0 11px}
+.batchHint{font-size:11px;color:#536c7a;line-height:1.7;margin:6px 0}
+.batchState{font-size:11px;color:#327c74;background:#ecf6f2;border-radius:8px;padding:8px 10px;margin-top:8px}
+.batchActive{display:inline-flex;align-items:center;border:1px solid #b8ddd4;background:#eaf5f0;color:#166e64;border-radius:7px;padding:7px 12px;font-size:11px;font-weight:650}
+@media(max-width:950px){.pdfWrap.precise{max-height:570px;min-height:350px}.mapSectionList{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.pdfWrap.precise{max-height:450px;padding:7px}.mapSectionList{grid-template-columns:1fr}.mapSection{min-height:100px}.pdfZoomTools{gap:2px}.topActions .button{padding:8px 9px;font-size:11px}}
