@@ -42,8 +42,8 @@
   };
   const relLabel=x=>x.relevance||(x.curated?'理论支撑':'尚待评估');
   const topicsOf=x=>x.researchThemes||[];
-  const scopeLabel=x=>x.public?'直接涉及公共讨论':
-    x.discussionScope||'是否涉及公共讨论尚待核对';
+  const scopeLabel=x=>x.publicScope||x.discussionScope||
+    (x.public?'直接研究公共讨论':'是否直接涉及公共讨论尚待核对');
   const reviewBadge=x=>x.curated?'人工核对的公开文献':x.analysisStatus||'仅有题录/摘要';
   const paperSource=x=>x.sourceTier||(x.type==='工作论文'?'工作论文／预印本':'未核验来源层级');
   function researchPapers(){
