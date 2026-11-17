@@ -26,7 +26,7 @@ function element(id) {
 }
 const document = {
   getElementById: element,
-  querySelector: () => null,
+  querySelector: selector => selector.includes('.headbar') ? element('headbar') : null,
   querySelectorAll: () => [],
   addEventListener(type, callback) {(listeners[type] ||= []).push(callback);},
   body: {style: {}}
