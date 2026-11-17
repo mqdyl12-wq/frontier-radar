@@ -1,7 +1,7 @@
 {
   "date": "2026-11-17",
-  "checkedAt": "2026-11-17T01:27:33.318671+00:00",
-  "label": "自动收录 · 最近一次检索 2026-11-17 01:27 UTC",
+  "checkedAt": "2026-11-17T01:32:55.603084+00:00",
+  "label": "自动收录 · 最近一次检索 2026-11-17 01:32 UTC",
   "papers": [
     {
       "id": "p-64639a06377f22aefd",
@@ -27,31 +27,6 @@
         "Crossref"
       ],
       "url": "https://doi.org/10.66104/2fxv0d97"
-    },
-    {
-      "id": "p-32cbeef849b2fa197c",
-      "title": "What Is a Source? In Search of Authorship: From Princess Diana’s Trademark to Generative AI",
-      "en": "What Is a Source? In Search of Authorship: From Princess Diana’s Trademark to Generative AI",
-      "authors": "Mira Moldawer",
-      "date": "2026-01-06",
-      "discoveredAt": "2026-11-16",
-      "venue": "Tulane Journal of Technology &amp; Intellectual Property",
-      "type": "正式发表",
-      "topic": [
-        "AI摘要"
-      ],
-      "public": false,
-      "method": "未核对全文；不能仅凭题录判定研究方法。",
-      "question": "自动发现候选文献；研究问题尚待核对。",
-      "finding": "自动获取题录，未提供摘要；不推断研究发现。",
-      "scope": "Crossref 登记日期 2026-11-16；出版日期 2026-01-06；未核对全文。",
-      "significance": "题名与研究方向相关；是否直接研究公共讨论尚待判定。",
-      "tags": [
-        "自动收录",
-        "待精读",
-        "Crossref"
-      ],
-      "url": "https://doi.org/10.37381/rfb2sn10"
     }
   ],
   "tech": [
@@ -67,19 +42,6 @@
         "官方动态"
       ],
       "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers"
-    },
-    {
-      "id": "t-dd659f011024f04f24",
-      "title": "Strengthening the fight against online child sexual abuse with new tools and support",
-      "date": "2026-11-16",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/index/strengthening-online-child-safety"
     },
     {
       "id": "t-d91fd06de7b8771ee8",
@@ -134,71 +96,6 @@
       "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams"
     },
     {
-      "id": "t-21e886491b30cfff04",
-      "title": "More ways to move care forward with ChatGPT for Healthcare",
-      "date": "2026-11-16",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare"
-    },
-    {
-      "id": "t-60f3c7381bc61eae5e",
-      "title": "The King’s Trust and OpenAI launch £1m partnership",
-      "date": "2026-11-16",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：The King’s Trust and OpenAI launch a £1m partnership to help up to 25,000 young people across the UK build practical AI skills for work.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/index/the-kings-trust-and-openai"
-    },
-    {
-      "id": "t-3d4aeac88b69acfaa9",
-      "title": "At Holiday Extras, dots get to work before anyone asks",
-      "date": "2026-11-16",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Dots deliver launch reports unprompted, flag issues people might miss, and talk through upcoming meetings on the commute to work.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/business/customer-stories/holiday-extras-dots"
-    },
-    {
-      "id": "t-2e8f421d2ee2a3dfd3",
-      "title": "A step toward defining the Standard Model on a lattice",
-      "date": "2026-11-15",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/index/step-toward-defining-the-standard-model"
-    },
-    {
-      "id": "t-33b95c2112c46efd09",
-      "title": "Our new blog for science",
-      "date": "2026-11-15",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/index/our-new-blog-for-science"
-    },
-    {
       "id": "t-7d4d71d056da02862d",
       "title": "Introducing ChatGPT Wallet",
       "date": "2026-11-13",
@@ -210,58 +107,6 @@
         "官方动态"
       ],
       "url": "https://openai.com/index/introducing-chatgpt-wallet"
-    },
-    {
-      "id": "t-a99dfdd20d85acbbb8",
-      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
-      "date": "2026-11-13",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/business/customer-stories/shield"
-    },
-    {
-      "id": "t-67672a694e389b29af",
-      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-      "date": "2026-11-12",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/business/customer-stories/amplitude"
-    },
-    {
-      "id": "t-b9840fd67063a36a40",
-      "title": "Gondola doubles revenue as its team builds more with Codex",
-      "date": "2026-11-12",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/business/customer-stories/gondola"
-    },
-    {
-      "id": "t-4922ca6fb0dd92994c",
-      "title": "Holiday Extras is rethinking what it can build with Codex",
-      "date": "2026-11-12",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/business/customer-stories/holidays-extras-codex"
     },
     {
       "id": "t-d7c1da8cb7dc41da68",
@@ -277,19 +122,6 @@
       "url": "https://openai.com/index/children-first-declaration"
     },
     {
-      "id": "t-65b96c238445cdedc9",
-      "title": "Gilbert + Tobin rethinks the business of law with AI",
-      "date": "2026-11-12",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/index/gilbert-tobin-sam-nickless"
-    },
-    {
       "id": "t-5b69826eead48a963c",
       "title": "Introducing Gemini 4 Hydrogen",
       "date": "2026-11-12",
@@ -301,19 +133,6 @@
         "官方动态"
       ],
       "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
-    },
-    {
-      "id": "t-ac94b61a25ade5edbf",
-      "title": "ChatGPT Plus for veterans and servicemembers",
-      "date": "2026-11-11",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/index/chatgpt-plus-for-veterans"
     },
     {
       "id": "t-55ff14dc4213127df7",
@@ -329,45 +148,6 @@
       "url": "https://openai.com/index/jiostar-vijay-seshadri"
     },
     {
-      "id": "t-ba0fcf4e325b4115c7",
-      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
-      "date": "2026-11-11",
-      "source": "Google DeepMind 官方博客",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Predicting how DNA sequences and their variations impact specific human cell types and disease.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
-    },
-    {
-      "id": "t-0f0020abcf733229d2",
-      "title": "Helping caregivers use AI in everyday life",
-      "date": "2026-11-10",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life"
-    },
-    {
-      "id": "t-991ad48e8559b2fefa",
-      "title": "Introducing Businesses in ChatGPT",
-      "date": "2026-11-10",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/index/introducing-businesses-chatgpt"
-    },
-    {
       "id": "t-69d4d9d74efa01629a",
       "title": "Closing the AI guidance gap in education",
       "date": "2026-11-10",
@@ -381,45 +161,6 @@
       "url": "https://openai.com/index/closing-ai-guidance-gap-education"
     },
     {
-      "id": "t-9092d5eb66f2954740",
-      "title": "Singapore Airlines elevates travel & work with OpenAI technology",
-      "date": "2026-11-10",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/index/singapore-airlines-travel-work"
-    },
-    {
-      "id": "t-f3fc54cd1d78c100d6",
-      "title": "Work at the Frontier: AI’s effect on freelance work",
-      "date": "2026-11-10",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/index/ai-effect-on-freelance-work"
-    },
-    {
-      "id": "t-37e4452e64c861cffe",
-      "title": "Cogent and OpenAI build cyber defense factories for enterprises",
-      "date": "2026-11-10",
-      "source": "OpenAI 官方动态",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://openai.com/index/cogent-security"
-    },
-    {
       "id": "t-55cb0588b3e8436e78",
       "title": "Gemini 4 Carbon is now available",
       "date": "2026-11-10",
@@ -431,32 +172,6 @@
         "官方动态"
       ],
       "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
-    },
-    {
-      "id": "t-0e9fb0eb84f13acffd",
-      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
-      "date": "2026-11-10",
-      "source": "Google DeepMind 官方博客",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
-    },
-    {
-      "id": "t-1972a6107d7cc016e0",
-      "title": "Opening the datasets behind our AI weather models",
-      "date": "2026-11-10",
-      "source": "Google DeepMind 官方博客",
-      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
-      "impact": "研究启发待补充；不能仅凭标题判断效果。",
-      "tags": [
-        "自动收录",
-        "官方动态"
-      ],
-      "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/"
     }
   ],
   "opportunities": [],
@@ -467,6 +182,7 @@
     "Google DeepMind 官方博客"
   ],
   "issues": [
-    "arXiv: HTTP Error 429: Unknown Error"
+    "arXiv: The read operation timed out",
+    "Google DeepMind 官方博客: not well-formed (invalid token): line 1, column 0"
   ]
 }
