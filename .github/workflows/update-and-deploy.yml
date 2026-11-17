@@ -39,6 +39,7 @@ jobs:
           node --check research_ui.js
           node tests/test_tech_bookmarks.js
           node tests/test_paperlens_locator.js
+          node tests/test_paperlens_v2_features.js
       - name: Collect sources and refresh JSON
         run: python scripts/update_feed.py
       - name: Optional Chinese academic review (abstract-grounded)
