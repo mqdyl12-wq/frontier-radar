@@ -268,6 +268,7 @@
   }
 
   ensureControls();
+  document.querySelector('[data-tab="map"]')?.addEventListener('click',()=>updateTab('map'));
   el2('batchPromptBtn')?.addEventListener('click',()=>{
     copyText(BATCH_PROMPT).then(()=>toast('批量初读指令已复制；在 ChatGPT 同时上传多篇英文 PDF'))
       .catch(()=>toast('剪贴板不可用，请检查浏览器权限'));
