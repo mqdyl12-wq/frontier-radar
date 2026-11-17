@@ -25,8 +25,8 @@ const original='Generative search engines directly generate responses to user qu
 const result=locate(items,original);
 assert.equal(result.confidence,'high');
 assert.deepEqual(Array.from(result.indices),[0,1,2]);
-const repeat=locate([{str:'The response is short. The response is short. Another sentence.'}],
-'The response is short. The response is short.');
+const repeat=locate([{str:'Generated responses have in-line citations. Generated responses have in-line citations.'}],
+'Generated responses have in-line citations.');
 assert.equal(repeat.confidence,'partial');
 assert.equal(repeat.ambiguous,true);
 assert.equal(locate(items,'There are completely different claims in this paper about energy systems.'),null);
