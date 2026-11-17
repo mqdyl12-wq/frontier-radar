@@ -6,6 +6,9 @@ on:
       - 'scripts/**'
       - 'tests/**'
       - 'index.html'
+      - 'research_ui.js'
+      - 'research.css'
+      - 'data/curated_library.json'
       - '.github/workflows/update-and-deploy.yml'
   schedule:
     # 08:17 Beijing time year-round (UTC+08:00).
@@ -30,10 +33,17 @@ jobs:
           python-version: '3.12'
       - name: Verify collector
         run: |
-          python -m py_compile scripts/update_feed.py
+          python -m py_compile scripts/update_feed.py scripts/enrich_feed.py
           python -m unittest discover -s tests -v
+          node --check research_ui.js
       - name: Collect sources and refresh JSON
         run: python scripts/update_feed.py
+      - name: Optional Chinese academic review (abstract-grounded)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-4.1-mini
+          MAX_AI_REVIEWS: '5'
+        run: python scripts/enrich_feed.py
       - name: Commit feed when changed
         run: |
           git config user.name 'github-actions[bot]'
