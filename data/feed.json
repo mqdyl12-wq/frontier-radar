@@ -1,32 +1,42 @@
 {
   "date": "2026-11-17",
-  "checkedAt": "2026-11-17T01:35:03.470723+00:00",
-  "label": "自动收录 · 最近一次检索 2026-11-17 01:35 UTC",
+  "checkedAt": "2026-11-17T01:49:48.324427+00:00",
+  "label": "自动收录 · 最近一次检索 2026-11-17 01:49 UTC",
   "papers": [
     {
-      "id": "p-64639a06377f22aefd",
-      "title": "Automating Institutional Internal Communication with a Generative Artificial Intelligence Agent and Scheduled Workflows at IFTO - Araguatins Campus",
-      "en": "Automating Institutional Internal Communication with a Generative Artificial Intelligence Agent and Scheduled Workflows at IFTO - Araguatins Campus",
-      "authors": "Nicolas Heitor Feitosa Costa, Fábio Emanuell Abreu Cardoso, Julio Cesar Santos Sousa, Valéria dos Santos Silva Torres, Gabriel Ribeiro Milhomem Ferreira, Allan Carlos Araújo Teixeira",
-      "date": "2026-11-16",
-      "discoveredAt": "2026-11-16",
-      "venue": "REMUNOM",
+      "id": "c-liu-zhang",
+      "title": "用户生成内容的 AI 摘要积极性偏差及其对公众情绪的影响",
+      "en": "Positivity Bias in AI-Generated Summaries of User-Generated Content: Exploring Its Sources and Impact on Public Sentiment",
+      "authors": "Liu & Zhang",
+      "date": "2026-09",
+      "venue": "Computational Communication Research",
       "type": "正式发表",
+      "url": "https://doi.org/10.5117/CCR2026.2.4.LIU",
+      "researchThemes": [
+        "AI摘要与公众意见",
+        "AI中介传播与AI信息中介"
+      ],
+      "relevance": "直接相关",
+      "public": true,
+      "method": "微博情境；比较样本帖子、摘要与全部 UGC 的情绪；并采用双重差分设计。",
+      "finding": "抽样与摘要生成两个环节均放大了正面内容；其研究期内未发现摘要单独显著改变后续公众情绪。",
+      "significance": "AI 对已有公众表达的再呈现及其可能的反馈效应；结论限定于论文考察的功能阶段与平均情绪。",
+      "scope": "已核对期刊正式摘要，未逐项复核全文",
+      "theory": "AI 对已有公众表达的再呈现及其可能的反馈效应；结论限定于论文考察的功能阶段与平均情绪。",
+      "question": "与在研方向的关系：关注AI生成的信息线索、公共讨论结构及其理论解释。",
+      "curated": true,
+      "sourceTier": "传播学重点／专业期刊",
       "topic": [
-        "AI-MC"
+        "AI摘要",
+        "计算传播"
       ],
-      "public": false,
-      "method": "未核对全文；不能仅凭题录判定研究方法。",
-      "question": "自动发现候选文献；研究问题尚待核对。",
-      "finding": "来源提供的摘要（未核对全文）：Internal communication in public educational institutions is often hindered by administrative overload, fragmented formal channels and slow information dissemination. This article describes the development, deployment and extension of an internal communication agent based on generative artificial intelligence at the Federal Institute of Tocantins (IFTO) - Araguatins Campus. The research, applied i…",
-      "scope": "Crossref 登记日期 2026-11-16；出版日期 2026-11-16；未核对全文。",
-      "significance": "题名与研究方向相关；是否直接研究公共讨论尚待判定。",
       "tags": [
-        "自动收录",
-        "待精读",
-        "Crossref"
+        "直接相关",
+        "AI摘要与公众意见",
+        "AI中介传播与AI信息中介"
       ],
-      "url": "https://doi.org/10.66104/2fxv0d97"
+      "abstract": "",
+      "reviewMode": "已核对期刊正式摘要，未逐项复核全文"
     },
     {
       "id": "p-bff9d572c373db9a75",
@@ -41,9 +51,17 @@
         "AI摘要"
       ],
       "public": false,
+      "researchThemes": [
+        "AI中介传播与AI信息中介",
+        "意见气候"
+      ],
+      "relevance": "重点关注",
+      "sourceTier": "预印本（非同行评议）",
+      "abstract": "Generative artificial intelligence (AI) is increasingly integrated into the online platforms where humans exchange opinions; large language models (LLMs) have been polishing users' posts on LinkedIn and providing context for content shared on X. While prior work has shown that AI can express biased opinions and shape individuals' opinions during human-AI interactions, less attention has been paid to its influence on collective opinion formation when mediating human-to-human communication. We address this gap via a combination of empirical and theoretical analyses. We show empirically that LLMs from multiple popular families introduce directional biases when instructed to edit human-written texts on contested topics, for example, nudging texts in favor of gun control and against atheism. Building on this observation, we introduce a mathematical model of opinion dynamics in which an AI system sits between users on a social network, transforming the opinions they express and perceive. By analytically characterizing the equilibrium of this model and performing simulations on real social network data, we show that biases introduced by AI in human-to-human communication can be amplified through the network and shift collective opinion in their direction. In light of these findings, we investigate whether such biases are controllable by online platforms. We audit the \"Explain this post\" feature on X and find evidence of pro-life bias in Grok's outputs on abortion-related content, which we trace back to specific design choices. We conclude with a discussion of the broader implications of our findings in relation to ongoing legislative efforts in the European Union.",
+      "analysisStatus": "待解读",
       "method": "预印本，研究方法需核对全文。",
       "question": "依据题名和摘要筛选，研究问题需进一步确认。",
-      "finding": "作者摘要（未核对全文）：Generative artificial intelligence (AI) is increasingly integrated into the online platforms where humans exchange opinions; large language models (LLMs) have been polishing users' posts on LinkedIn and providing context for content shared on X. While prior work has shown that AI can express biased opinions and shape individuals' opinions during human-AI interactions, less attention has been paid …",
+      "finding": "作者摘要（未核对全文）：Generative artificial intelligence (AI) is increasingly integrated into the online platforms where humans exchange opinions; large language models (LLMs) have been polishing users' posts on LinkedIn and providing context for content shared on X. While prior work has shown that AI can express biased opinions and shape individuals' opinions during human-AI interactions, less attention has been paid to its influence on collective opinion formation when mediating human-to-human communication. We address this gap via a combination of empirical and theoretical analyses. We show empirically that LLMs from multiple popular families introduce directional biases when instructed to edit human-written texts on contested topics, for example, nudging texts in favor of gun control and against atheism. Building on this observation, we introduce a mathematical model of opinion dynamics in which an AI system sits between users on a social network, transforming the opinions they express and perceive. By analytically characterizing the equilibrium of this model and performing simulations on real social network data, we show that biases introduced by AI in human-to-human communication can be amplified through the network and shift collective opinion in their direction. In light of these findings, we investigate whether such biases are controllable by online platforms. We audit the \"Explain this post\" feature on X and find evidence of pro-life bias in Grok's outputs on abortion-related content, which we trace back to specific design choices. We conclude with a discussion of the broader implications of our findings in relation to ongoing legislative efforts in the European Union.",
       "scope": "arXiv 首次发布 2026-05-15，最新修订 2026-11-10；未核对全文。",
       "significance": "候选研究；公共讨论属性尚未核查。",
       "tags": [
@@ -52,6 +70,271 @@
         "待精读"
       ],
       "url": "https://arxiv.org/abs/2605.16245v2"
+    },
+    {
+      "id": "c-govers",
+      "title": "AI 生成摘要如何引导社交媒体用户的意见与参与",
+      "en": "Narratives and Perspectives: How AI Summaries Steer Users' Opinions and Engagement on Social Media",
+      "authors": "Govers et al.",
+      "date": "2026-04",
+      "venue": "CHI 2026",
+      "type": "正式发表",
+      "url": "https://doi.org/10.1145/3772318.3790945",
+      "researchThemes": [
+        "AI摘要与公众意见",
+        "意见气候"
+      ],
+      "relevance": "直接相关",
+      "public": true,
+      "method": "实验：144名参与者使用模拟讨论串，比较叙述式摘要和赞成/反对比例摘要。",
+      "finding": "明示赞成比例提高向多数意见靠拢的程度；叙述式摘要可能使极化讨论被误判为均衡；参与意愿未见摘要效应。",
+      "significance": "描述性规范/意见分布线索；不能据此证明真实平台长期运行的集体结构变化。",
+      "scope": "已核对正式会议论文及作者公开全文的摘要",
+      "theory": "描述性规范/意见分布线索；不能据此证明真实平台长期运行的集体结构变化。",
+      "question": "与在研方向的关系：关注AI生成的信息线索、公共讨论结构及其理论解释。",
+      "curated": true,
+      "sourceTier": "重要同行评审会议",
+      "topic": [
+        "AI摘要",
+        "计算传播"
+      ],
+      "tags": [
+        "直接相关",
+        "AI摘要与公众意见",
+        "意见气候"
+      ],
+      "abstract": "",
+      "reviewMode": "已核对正式会议论文及作者公开全文的摘要"
+    },
+    {
+      "id": "c-heseltine",
+      "title": "社交媒体 AI 摘要改善对话但减少参与",
+      "en": "AI summaries in social media improve dialogue but reduce engagement",
+      "authors": "Heseltine et al.",
+      "date": "2026-03-26",
+      "venue": "NYU CSMaP 工作论文",
+      "type": "工作论文",
+      "url": "https://csmapnyu.org/research/academic-research/ai-summaries-in-social-media-improve-dialogue-but-reduce-engagement",
+      "researchThemes": [
+        "AI摘要与公众意见",
+        "AI内容趋同"
+      ],
+      "relevance": "直接相关",
+      "public": true,
+      "method": "两项预注册在线实验，在模拟的互动式社交媒体环境中测试摘要。",
+      "finding": "机构摘要报告评论质量改善、参与减少、与摘要的语义相似度增加；未系统性增加毒性。",
+      "significance": "检验 AI 摘要与后续表达的关联；仍属工作论文，需区分模拟环境与现场证据。",
+      "scope": "仅核对研究中心所列作者摘要，未核对全文",
+      "theory": "检验 AI 摘要与后续表达的关联；仍属工作论文，需区分模拟环境与现场证据。",
+      "question": "与在研方向的关系：关注AI生成的信息线索、公共讨论结构及其理论解释。",
+      "curated": true,
+      "sourceTier": "研究预印本",
+      "topic": [
+        "AI摘要",
+        "计算传播"
+      ],
+      "tags": [
+        "直接相关",
+        "AI摘要与公众意见",
+        "AI内容趋同"
+      ],
+      "abstract": "",
+      "reviewMode": "仅核对研究中心所列作者摘要，未核对全文"
+    },
+    {
+      "id": "c-doshi",
+      "title": "生成式 AI 提高个体创造力却降低作品总体多样性",
+      "en": "Generative AI enhances individual creativity but reduces the collective diversity of novel content",
+      "authors": "Doshi & Hauser",
+      "date": "2024-07-12",
+      "venue": "Science Advances",
+      "type": "正式发表",
+      "url": "https://doi.org/10.1126/sciadv.adn5290",
+      "researchThemes": [
+        "AI内容趋同"
+      ],
+      "relevance": "理论支撑",
+      "public": false,
+      "method": "创意故事写作实验；比较 AI 辅助和没有 AI 辅助的创作。",
+      "finding": "使用生成式 AI 的个体创作被评价为更有创意，但 AI 辅助作品间的整体相似性增加。",
+      "significance": "为趋同提供跨学科证据，但不可直接等同于‘用户仅阅读摘要后自己发帖’的情境。",
+      "scope": "已核对期刊正式文章摘要及结果",
+      "theory": "为趋同提供跨学科证据，但不可直接等同于‘用户仅阅读摘要后自己发帖’的情境。",
+      "question": "与在研方向的关系：关注AI生成的信息线索、公共讨论结构及其理论解释。",
+      "curated": true,
+      "sourceTier": "交叉学科重点期刊",
+      "topic": [
+        "计算传播"
+      ],
+      "tags": [
+        "理论支撑",
+        "AI内容趋同"
+      ],
+      "abstract": "",
+      "reviewMode": "已核对期刊正式文章摘要及结果"
+    },
+    {
+      "id": "c-tessler",
+      "title": "AI 能帮助人们在民主讨论中形成共同立场",
+      "en": "AI Can Help Humans Find Common Ground in Democratic Deliberation",
+      "authors": "Tessler et al.",
+      "date": "2024",
+      "venue": "Science",
+      "type": "正式发表",
+      "url": "https://doi.org/10.1126/science.adq2852",
+      "researchThemes": [
+        "AI摘要与公众意见"
+      ],
+      "relevance": "交叉参考",
+      "public": true,
+      "method": "民主协商与共同立场生成的实验研究。",
+      "finding": "AI 支持生成可代表多方意见的共同陈述；本研究将其作为 AI 参与群体意见综合的相关背景，不直接比较公共讨论帖子分布。",
+      "significance": "与 AI 综合众人表达有关，应用机制不同于平台被动展示摘要。",
+      "scope": "期刊题录及作者研究框架核对；效果细节应阅读原文",
+      "theory": "与 AI 综合众人表达有关，应用机制不同于平台被动展示摘要。",
+      "question": "与在研方向的关系：关注AI生成的信息线索、公共讨论结构及其理论解释。",
+      "curated": true,
+      "sourceTier": "交叉学科重点期刊",
+      "topic": [
+        "AI摘要",
+        "计算传播"
+      ],
+      "tags": [
+        "交叉参考",
+        "AI摘要与公众意见"
+      ],
+      "abstract": "",
+      "reviewMode": "期刊题录及作者研究框架核对；效果细节应阅读原文"
+    },
+    {
+      "id": "c-jungherr",
+      "title": "人工智能与公共讨论空间",
+      "en": "Artificial intelligence and the public arena",
+      "authors": "Jungherr & Schroeder",
+      "date": "2023-06-19",
+      "venue": "Communication Theory",
+      "type": "正式发表",
+      "url": "https://doi.org/10.1093/ct/qtad006",
+      "researchThemes": [
+        "AI中介传播与AI信息中介",
+        "AI内容趋同"
+      ],
+      "relevance": "理论支撑",
+      "public": true,
+      "method": "理论框架论文，分析 AI 对公共信息空间与中介结构的系统性影响。",
+      "finding": "作者提出 AI 可强化中介结构的控制力，AI 概括的趋中倾向可能遮蔽少数声音；这些属于理论论证，不等同于实验实证结果。",
+      "significance": "提供 AI 作为公共领域信息中介的结构性研究基础。",
+      "scope": "已核对期刊全文",
+      "theory": "提供 AI 作为公共领域信息中介的结构性研究基础。",
+      "question": "与在研方向的关系：关注AI生成的信息线索、公共讨论结构及其理论解释。",
+      "curated": true,
+      "sourceTier": "传播学重点／专业期刊",
+      "topic": [
+        "计算传播"
+      ],
+      "tags": [
+        "理论支撑",
+        "AI中介传播与AI信息中介",
+        "AI内容趋同"
+      ],
+      "abstract": "",
+      "reviewMode": "已核对期刊全文"
+    },
+    {
+      "id": "c-hancock",
+      "title": "AI 中介传播的定义、研究议程与伦理问题",
+      "en": "AI-Mediated Communication: Definition, Research Agenda, and Ethical Considerations",
+      "authors": "Hancock, Naaman & Levy",
+      "date": "2020-01-24",
+      "venue": "Journal of Computer-Mediated Communication",
+      "type": "正式发表",
+      "url": "https://doi.org/10.1093/jcmc/zmz022",
+      "researchThemes": [
+        "AI中介传播与AI信息中介"
+      ],
+      "relevance": "理论支撑",
+      "public": false,
+      "method": "概念及理论研究；提出 AI-MC 的定义和研究议程。",
+      "finding": "界定 AI 代表传播者修改、增强或生成讯息的人际传播，并区分推荐排序等间接支持传播的算法工具。",
+      "significance": "可用于界定平台向公众展示 AI 摘要与典型人际 AI-MC 的边界。",
+      "scope": "已核对期刊正文与摘要",
+      "theory": "可用于界定平台向公众展示 AI 摘要与典型人际 AI-MC 的边界。",
+      "question": "与在研方向的关系：关注AI生成的信息线索、公共讨论结构及其理论解释。",
+      "curated": true,
+      "sourceTier": "传播学重点／专业期刊",
+      "topic": [
+        "AI-MC"
+      ],
+      "tags": [
+        "理论支撑",
+        "AI中介传播与AI信息中介"
+      ],
+      "abstract": "",
+      "reviewMode": "已核对期刊正文与摘要"
+    },
+    {
+      "id": "c-matthes",
+      "title": "沉默的螺旋再检验：意见支持感知与政治意见表达的元分析",
+      "en": "The Spiral of Silence Revisited: A Meta-Analysis on the Relationship Between Perceptions of Opinion Support and Political Opinion Expression",
+      "authors": "Matthes, Knoll & von Sikorski",
+      "date": "2018",
+      "venue": "Communication Research",
+      "type": "正式发表",
+      "url": "https://doi.org/10.1177/0093650217745429",
+      "researchThemes": [
+        "意见气候"
+      ],
+      "relevance": "理论支撑",
+      "public": true,
+      "method": "关于意见支持感知与政治意见表达之间关系的元分析。",
+      "finding": "整体关系较弱但为正向；原研究检验个体层次意见支持感知与表达，不直接观察讨论整体情绪构成。",
+      "significance": "支撑意见气候的个体表达机制，跨层次推论需单独说明。",
+      "scope": "依据已核对稿件引用与 DOI；方法细节需进一步核对原文",
+      "theory": "支撑意见气候的个体表达机制，跨层次推论需单独说明。",
+      "question": "与在研方向的关系：关注AI生成的信息线索、公共讨论结构及其理论解释。",
+      "curated": true,
+      "sourceTier": "传播学重点／专业期刊",
+      "topic": [
+        "AI-MC"
+      ],
+      "tags": [
+        "理论支撑",
+        "意见气候"
+      ],
+      "abstract": "",
+      "reviewMode": "依据已核对稿件引用与 DOI；方法细节需进一步核对原文"
+    },
+    {
+      "id": "c-zerback",
+      "title": "网络评论样例能否触发沉默的螺旋？",
+      "en": "Can Online Exemplars Trigger a Spiral of Silence? Examining the Effects of Exemplar Opinions on Perceptions of Public Opinion and Speaking Out",
+      "authors": "Zerback & Fawzi",
+      "date": "2017",
+      "venue": "New Media & Society",
+      "type": "正式发表",
+      "url": "https://doi.org/10.1177/1461444815625942",
+      "researchThemes": [
+        "意见气候"
+      ],
+      "relevance": "理论支撑",
+      "public": true,
+      "method": "在线评论样例暴露的实验设计。",
+      "finding": "有限评论样例可以改变公众支持感知，并影响部分意见群体表达意愿；具体效应依赖立场与情境。",
+      "significance": "将可见线索与表达意愿联系起来，但不是 AI 机器计算的气候。",
+      "scope": "依据已核对稿件引用与 DOI；方法细节需进一步核对原文",
+      "theory": "将可见线索与表达意愿联系起来，但不是 AI 机器计算的气候。",
+      "question": "与在研方向的关系：关注AI生成的信息线索、公共讨论结构及其理论解释。",
+      "curated": true,
+      "sourceTier": "传播学重点／专业期刊",
+      "topic": [
+        "AI-MC"
+      ],
+      "tags": [
+        "理论支撑",
+        "意见气候"
+      ],
+      "abstract": "",
+      "reviewMode": "依据已核对稿件引用与 DOI；方法细节需进一步核对原文"
     }
   ],
   "tech": [
@@ -259,7 +542,5 @@
     "Google DeepMind 官方博客",
     "Google AI 官方博客"
   ],
-  "issues": [
-    "Google DeepMind 官方博客: not well-formed (invalid token): line 1, column 0"
-  ]
+  "issues": []
 }
