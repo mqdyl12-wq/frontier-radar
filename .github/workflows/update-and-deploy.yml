@@ -1,5 +1,12 @@
 name: Update frontier radar
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'index.html'
+      - '.github/workflows/update-and-deploy.yml'
   schedule:
     # 08:17 Beijing time year-round (UTC+08:00).
     - cron: '17 0 * * *'
