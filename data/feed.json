@@ -1,7 +1,7 @@
 {
   "date": "2026-11-17",
-  "checkedAt": "2026-11-17T01:32:55.603084+00:00",
-  "label": "自动收录 · 最近一次检索 2026-11-17 01:32 UTC",
+  "checkedAt": "2026-11-17T01:35:03.470723+00:00",
+  "label": "自动收录 · 最近一次检索 2026-11-17 01:35 UTC",
   "papers": [
     {
       "id": "p-64639a06377f22aefd",
@@ -27,6 +27,31 @@
         "Crossref"
       ],
       "url": "https://doi.org/10.66104/2fxv0d97"
+    },
+    {
+      "id": "p-bff9d572c373db9a75",
+      "title": "AI-Mediated Communication Can Steer Collective Opinion",
+      "en": "AI-Mediated Communication Can Steer Collective Opinion",
+      "authors": "Stratis Tsirtsis, Kaivalya Rawal, Chris Russell, Brent Mittelstadt, Sandra Wachter",
+      "date": "2026-05-15",
+      "updatedAt": "2026-11-10",
+      "venue": "arXiv（预印本）",
+      "type": "工作论文",
+      "topic": [
+        "AI摘要"
+      ],
+      "public": false,
+      "method": "预印本，研究方法需核对全文。",
+      "question": "依据题名和摘要筛选，研究问题需进一步确认。",
+      "finding": "作者摘要（未核对全文）：Generative artificial intelligence (AI) is increasingly integrated into the online platforms where humans exchange opinions; large language models (LLMs) have been polishing users' posts on LinkedIn and providing context for content shared on X. While prior work has shown that AI can express biased opinions and shape individuals' opinions during human-AI interactions, less attention has been paid …",
+      "scope": "arXiv 首次发布 2026-05-15，最新修订 2026-11-10；未核对全文。",
+      "significance": "候选研究；公共讨论属性尚未核查。",
+      "tags": [
+        "自动收录",
+        "预印本",
+        "待精读"
+      ],
+      "url": "https://arxiv.org/abs/2605.16245v2"
     }
   ],
   "tech": [
@@ -135,6 +160,19 @@
       "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/"
     },
     {
+      "id": "t-d6d23163b98ddfa1ea",
+      "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+      "date": "2026-11-12",
+      "source": "Google AI 官方博客",
+      "excerpt": "官方 RSS 摘要（未阅读全文核对）：We are bringing Gemini 4 Hydrogen to Google Search globally to provide you with more helpful, visual, and intuitive responses.",
+      "impact": "研究启发待补充；不能仅凭标题判断效果。",
+      "tags": [
+        "自动收录",
+        "官方动态"
+      ],
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/"
+    },
+    {
       "id": "t-55ff14dc4213127df7",
       "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
       "date": "2026-11-11",
@@ -146,6 +184,19 @@
         "官方动态"
       ],
       "url": "https://openai.com/index/jiostar-vijay-seshadri"
+    },
+    {
+      "id": "t-02bfed5e7aa817ea9d",
+      "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+      "date": "2026-11-11",
+      "source": "Google AI 官方博客",
+      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+      "impact": "研究启发待补充；不能仅凭标题判断效果。",
+      "tags": [
+        "自动收录",
+        "官方动态"
+      ],
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
     },
     {
       "id": "t-69d4d9d74efa01629a",
@@ -172,6 +223,32 @@
         "官方动态"
       ],
       "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+    },
+    {
+      "id": "t-fafff4292c09fd9370",
+      "title": "Gemini Intelligence: New features, on more devices",
+      "date": "2026-11-10",
+      "source": "Google AI 官方博客",
+      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
+      "impact": "研究启发待补充；不能仅凭标题判断效果。",
+      "tags": [
+        "自动收录",
+        "官方动态"
+      ],
+      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/"
+    },
+    {
+      "id": "t-c979be8e72cc92b8a0",
+      "title": "Google Cloud launches Gemini for healthcare.",
+      "date": "2026-11-10",
+      "source": "Google AI 官方博客",
+      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.",
+      "impact": "研究启发待补充；不能仅凭标题判断效果。",
+      "tags": [
+        "自动收录",
+        "官方动态"
+      ],
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/"
     }
   ],
   "opportunities": [],
@@ -179,10 +256,10 @@
     "Crossref",
     "arXiv",
     "OpenAI 官方动态",
-    "Google DeepMind 官方博客"
+    "Google DeepMind 官方博客",
+    "Google AI 官方博客"
   ],
   "issues": [
-    "arXiv: The read operation timed out",
     "Google DeepMind 官方博客: not well-formed (invalid token): line 1, column 0"
   ]
 }
