@@ -23,8 +23,10 @@ const items=[
 ];
 const original='Generative search engines directly generate responses to user queries, along with inline citations.';
 const result=locate(items,original);
-assert.equal(result.confidence,'high');
+assert.equal(result.confidence,'partial');
 assert.deepEqual(Array.from(result.indices),[0,1,2]);
+const longText='A trustworthy generative search engine should provide accurate citations for externally verifiable claims and should clearly distinguish source attribution from factual accuracy.';
+assert.equal(locate([{str:longText}],longText).confidence,'high');
 const repeat=locate([{str:'Generated responses have in-line citations. Generated responses have in-line citations.'}],
 'Generated responses have in-line citations.');
 assert.equal(repeat.confidence,'partial');
