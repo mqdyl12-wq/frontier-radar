@@ -30,8 +30,9 @@ const localStorage={getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k
 const sandbox={window:{},document:{
     getElementById:node,
     querySelector:sel=>{
+      if(sel==='[data-tab="map"]')return node('tabs').innerHTML.includes('data-tab="map"')?node('mapTab'):null;
       const m={'.topActions':'topActions','.tabs':'tabs','.pdfBottom':'pdfBottom',
-        '#importModal .modal p':'importHelp','[data-tab="map"]':'mapTab'};
+        '#importModal .modal p':'importHelp'};
       return m[sel]?node(m[sel]):null;
     },
     querySelectorAll:()=>[],
