@@ -9,6 +9,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -53,8 +54,28 @@ def model_analysis(paper: dict, key: str, model: str) -> dict:
         headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"},
         method="POST"
     )
-    with urllib.request.urlopen(req, timeout=75) as response:
-        result = json.loads(response.read())
+    try:
+        with urllib.request.urlopen(req, timeout=75) as response:
+            result = json.loads(response.read())
+    except urllib.error.HTTPError as error:
+        # Only log API error classification, never response body, credentials or user data.
+        try:
+            details = json.loads(error.read(8192)).get("error") or {}
+        except (ValueError, UnicodeDecodeError):
+            details = {}
+        code = str(details.get("code") or "unspecified")
+        kind = str(details.get("type") or "unspecified")
+        # Accept only ordinary machine-readable labels from the server.
+        import re
+        code = re.sub(r"[^a-zA-Z0-9_-]", "", code)[:80] or "unspecified"
+        kind = re.sub(r"[^a-zA-Z0-9_-]", "", kind)[:80] or "unspecified"
+        if error.code == 429:
+            print("::warning::Academic AI analysis blocked by API HTTP 429; "
+                  f"error.code={code}; error.type={kind}. "
+                  "Check API billing balance, project spend limits and rate limits.",
+                  file=sys.stderr)
+        raise RuntimeError(f"OpenAI API HTTP {error.code}; "
+                           f"error.code={code}; error.type={kind}") from None
     if result.get("status") not in ("completed", None):
         raise ValueError("Model result incomplete: " + str(result.get("status")))
     outputs = [
