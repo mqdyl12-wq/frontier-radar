@@ -28,7 +28,13 @@ const keys={
 Object.entries(keys).forEach(([key,value])=>storage.set(key,JSON.stringify(value)));
 const localStorage={getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,String(v))};
 const sandbox={window:{},document:{
-    getElementById:node,
+    getElementById:id=>{
+      const dynamic={'batchPromptBtn':'topActions','multiJsonBtn':'topActions',
+        'multiJsonFiles':'topActions','pdfjsHost':'dropTarget',
+        'pdfZoomIn':'pdfBottom','pdfZoomOut':'pdfBottom'};
+      if(dynamic[id]&&!node(dynamic[id]).innerHTML.includes('id="'+id+'"'))return null;
+      return node(id);
+    },
     querySelector:sel=>{
       if(sel==='[data-tab="map"]')return node('tabs').innerHTML.includes('data-tab="map"')?node('mapTab'):null;
       const m={'.topActions':'topActions','.tabs':'tabs','.pdfBottom':'pdfBottom',
