@@ -42,6 +42,7 @@ const sandbox={window:{},document:{
   renderContent:()=>{},
   renderParagraph:()=>'<button class="pageLink" data-page="1">PDF 第 1 页 ↗</button>',
   renderAll:()=>{},
+  gotoPage:()=>{},
   updateTab:function(tab){STATUS.tab=tab;sandbox.renderContent()},
   paperKey:p=>p.id,
   cleanImport:x=>x,
