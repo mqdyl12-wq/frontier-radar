@@ -1,7 +1,7 @@
 {
   "date": "2026-11-17",
-  "checkedAt": "2026-11-17T01:50:20.869113+00:00",
-  "label": "自动收录 · 最近一次检索 2026-11-17 01:50 UTC",
+  "checkedAt": "2026-11-17T01:51:22.206870+00:00",
+  "label": "自动收录 · 最近一次检索 2026-11-17 01:51 UTC",
   "papers": [
     {
       "id": "c-liu-zhang",
@@ -36,7 +36,8 @@
         "AI中介传播与AI信息中介"
       ],
       "abstract": "",
-      "reviewMode": "已核对期刊正式摘要，未逐项复核全文"
+      "reviewMode": "已核对期刊正式摘要，未逐项复核全文",
+      "publicScope": "真实社交媒体的 AI 摘要与公众情绪"
     },
     {
       "id": "p-bff9d572c373db9a75",
@@ -104,7 +105,8 @@
         "意见气候"
       ],
       "abstract": "",
-      "reviewMode": "已核对正式会议论文及作者公开全文的摘要"
+      "reviewMode": "已核对正式会议论文及作者公开全文的摘要",
+      "publicScope": "模拟讨论串中的个体意见与参与"
     },
     {
       "id": "c-heseltine",
@@ -139,7 +141,8 @@
         "AI内容趋同"
       ],
       "abstract": "",
-      "reviewMode": "仅核对研究中心所列作者摘要，未核对全文"
+      "reviewMode": "仅核对研究中心所列作者摘要，未核对全文",
+      "publicScope": "模拟社交媒体中的集体表达与参与"
     },
     {
       "id": "c-doshi",
@@ -171,7 +174,8 @@
         "AI内容趋同"
       ],
       "abstract": "",
-      "reviewMode": "已核对期刊正式文章摘要及结果"
+      "reviewMode": "已核对期刊正式文章摘要及结果",
+      "publicScope": "创意写作的集体多样性，不是公众讨论"
     },
     {
       "id": "c-tessler",
@@ -186,7 +190,7 @@
         "AI摘要与公众意见"
       ],
       "relevance": "交叉参考",
-      "public": true,
+      "public": false,
       "method": "民主协商与共同立场生成的实验研究。",
       "finding": "AI 支持生成可代表多方意见的共同陈述；本研究将其作为 AI 参与群体意见综合的相关背景，不直接比较公共讨论帖子分布。",
       "significance": "与 AI 综合众人表达有关，应用机制不同于平台被动展示摘要。",
@@ -204,7 +208,8 @@
         "AI摘要与公众意见"
       ],
       "abstract": "",
-      "reviewMode": "期刊题录及作者研究框架核对；效果细节应阅读原文"
+      "reviewMode": "期刊题录及作者研究框架核对；效果细节应阅读原文",
+      "publicScope": "民主协商的共同立场生成，与社交媒体帖子不同"
     },
     {
       "id": "c-jungherr",
@@ -220,7 +225,7 @@
         "AI内容趋同"
       ],
       "relevance": "理论支撑",
-      "public": true,
+      "public": false,
       "method": "理论框架论文，分析 AI 对公共信息空间与中介结构的系统性影响。",
       "finding": "作者提出 AI 可强化中介结构的控制力，AI 概括的趋中倾向可能遮蔽少数声音；这些属于理论论证，不等同于实验实证结果。",
       "significance": "提供 AI 作为公共领域信息中介的结构性研究基础。",
@@ -238,7 +243,8 @@
         "AI内容趋同"
       ],
       "abstract": "",
-      "reviewMode": "已核对期刊全文"
+      "reviewMode": "已核对期刊全文",
+      "publicScope": "公共领域结构理论，不直接测量集体表达"
     },
     {
       "id": "c-hancock",
@@ -270,7 +276,8 @@
         "AI中介传播与AI信息中介"
       ],
       "abstract": "",
-      "reviewMode": "已核对期刊正文与摘要"
+      "reviewMode": "已核对期刊正文与摘要",
+      "publicScope": "人际 AI-MC 理论，不直接检验公共讨论"
     },
     {
       "id": "c-matthes",
@@ -285,7 +292,7 @@
         "意见气候"
       ],
       "relevance": "理论支撑",
-      "public": true,
+      "public": false,
       "method": "关于意见支持感知与政治意见表达之间关系的元分析。",
       "finding": "整体关系较弱但为正向；原研究检验个体层次意见支持感知与表达，不直接观察讨论整体情绪构成。",
       "significance": "支撑意见气候的个体表达机制，跨层次推论需单独说明。",
@@ -302,7 +309,8 @@
         "意见气候"
       ],
       "abstract": "",
-      "reviewMode": "依据已核对稿件引用与 DOI；方法细节需进一步核对原文"
+      "reviewMode": "依据已核对稿件引用与 DOI；方法细节需进一步核对原文",
+      "publicScope": "公众意见表达机制的元分析，非 AI 摘要研究"
     },
     {
       "id": "c-zerback",
@@ -317,7 +325,7 @@
         "意见气候"
       ],
       "relevance": "理论支撑",
-      "public": true,
+      "public": false,
       "method": "在线评论样例暴露的实验设计。",
       "finding": "有限评论样例可以改变公众支持感知，并影响部分意见群体表达意愿；具体效应依赖立场与情境。",
       "significance": "将可见线索与表达意愿联系起来，但不是 AI 机器计算的气候。",
@@ -334,7 +342,8 @@
         "意见气候"
       ],
       "abstract": "",
-      "reviewMode": "依据已核对稿件引用与 DOI；方法细节需进一步核对原文"
+      "reviewMode": "依据已核对稿件引用与 DOI；方法细节需进一步核对原文",
+      "publicScope": "意见气候的个体发言实验，非 AI 摘要研究"
     }
   ],
   "tech": [
@@ -542,5 +551,7 @@
     "Google DeepMind 官方博客",
     "Google AI 官方博客"
   ],
-  "issues": []
+  "issues": [
+    "Google DeepMind 官方博客: not well-formed (invalid token): line 1, column 0"
+  ]
 }
