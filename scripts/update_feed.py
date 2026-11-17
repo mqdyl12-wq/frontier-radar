@@ -8,6 +8,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -20,11 +21,24 @@ OUTPUT = ROOT / "data" / "feed.json"
 ATOM = "{http://www.w3.org/2005/Atom}"
 TERMS = (
     "AI-mediated communication", "AI summaries public discussion",
-    "generative AI social media", "AI information summarization",
-    "generative search opinion", "algorithmic gatekeeping news",
+    "generative AI social media",
 )
 AI_RE = re.compile(r"\b(?:AI[- ]mediated|generative AI|AIGC|large language model|LLMs?|chatbot|algorithmic|artificial intelligence|AI summar(?:y|ies|ization)|AI overviews?|generative search|GPT[- 0-9])\b", re.I)
-COMM_RE = re.compile(r"\b(?:communicat|social media|politic|public|news|journalis|discourse|discussion|opinion|emotion|information|search|summari|media|trust|normative|online|participat|interperson|credibil|platform)\w*", re.I)
+COMM_RE = re.compile(
+    r"\\b(?:communicat|social media|politic|public|news|journalis|discourse|discussion"
+    r"|opinion|emotion|misinformation|summari|normative|participat|interperson"
+    r"|search (?:engine|result|interface)|information (?:exposure|retrieval)"
+    r"|media (?:use|effect)|platform (?:governance|content))\\w*", re.I
+)
+TECH_TITLE_RE = re.compile(
+    r"\\b(?:Gemini(?:\\s+\\d+)?|GPT(?:-\\d+)?|Claude|DeepSeek|Qwen|"
+    r"AI (?:search|overviews?|summar\\w*|discovery|for scientists|and children|"
+    r"guidance|effect|research|models?|agents?)|generative|agents?|"
+    r"(?:embedded )?assessments?|evaluat\\w*|benchmarks?|"
+    r"news|journalis\\w*|media|reasoning|retrieval|RAG|multimodal|"
+    r"open[- ]weights?|scientists use|researchers?|AI[- ]mediated)\\b|"
+    r"\\bIntroducing ChatGPT\\b", re.I
+)
 FEEDS = (
     ("OpenAI 官方动态", "https://openai.com/news/rss.xml", "openai.com"),
     ("Google DeepMind 官方博客", "https://deepmind.google/blog/rss.xml", "deepmind.google"),
@@ -55,7 +69,9 @@ def date_parts(value: dict) -> str:
 def fetch_crossref(since: str) -> list[dict]:
     found = []
     succeeded = 0
-    for term in TERMS:
+    for index, term in enumerate(TERMS):
+        if index:
+            time.sleep(1.5)  # Reduce Crossref request bursts.
         query = urllib.parse.urlencode({
             "query.bibliographic": term, "filter": f"from-created-date:{since}",
             "sort": "updated", "order": "desc", "rows": 30,
@@ -69,7 +85,7 @@ def fetch_crossref(since: str) -> list[dict]:
         for item in items:
             title = clean((item.get("title") or [""])[0], 240)
             doi = item.get("DOI")
-            if not doi or not (AI_RE.search(title) and COMM_RE.search(title)):
+            if not doi or not relevant_paper(title):
                 continue
             pub = item.get("published-online") or item.get("published") or item.get("issued") or {}
             published = date_parts(pub)
@@ -162,6 +178,8 @@ def fetch_rss(source: str, feed_url: str, domain: str, since_day: str) -> list[d
         if date and date < since_day:
             continue
         summary = clean(entry.findtext(f"{ATOM}summary" if atom else "description"))
+        if not relevant_tech(title):
+            continue
         found.append({
             "id": stable_id(url, "t"), "title": title, "date": date or "日期待核查",
             "source": source, "excerpt": "官方 RSS 摘要（未阅读全文核对）：" +
@@ -170,6 +188,12 @@ def fetch_rss(source: str, feed_url: str, domain: str, since_day: str) -> list[d
             "tags": ["自动收录", "官方动态"], "url": url,
         })
     return found
+
+def relevant_paper(title: str) -> bool:
+    return bool(AI_RE.search(title) and COMM_RE.search(title))
+
+def relevant_tech(title: str) -> bool:
+    return bool(TECH_TITLE_RE.search(title))
 
 def unique(records: list[dict]) -> list[dict]:
     by_id = {}
@@ -204,8 +228,12 @@ def main() -> None:
     if not successes:
         raise RuntimeError("All sources failed: previous feed preserved")
     old = json.loads(OUTPUT.read_text(encoding="utf-8")) if OUTPUT.exists() else {}
-    papers = unique(old.get("papers", []) + papers_crossref + papers_arxiv)
-    technology = unique(old.get("tech", []) + tech_new)
+    # Keep past curated records only if they meet today's relevance criteria.
+    # This removes low-value RSS/Crossref records from the first deployment.
+    papers = unique([p for p in old.get("papers", []) if relevant_paper(p.get("title", ""))]
+                    + papers_crossref + papers_arxiv)
+    technology = unique([t for t in old.get("tech", []) if relevant_tech(t.get("title", ""))]
+                        + tech_new)
     result = {
         "date": now.date().isoformat(), "checkedAt": now.isoformat(),
         "label": f"自动收录 · 最近一次检索 {now.strftime('%Y-%m-%d %H:%M UTC')}",
