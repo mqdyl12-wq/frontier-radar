@@ -1,0 +1,51 @@
+name: Update frontier radar
+on:
+  schedule:
+    # 08:17 Beijing time year-round (UTC+08:00).
+    - cron: '17 0 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: frontier-radar-publish
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify collector
+        run: |
+          python -m py_compile scripts/update_feed.py
+          python -m unittest discover -s tests -v
+      - name: Collect sources and refresh JSON
+        run: python scripts/update_feed.py
+      - name: Commit feed when changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/feed.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh frontier radar feed"
+            git push
+          fi
+      - name: Upload Pages site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
