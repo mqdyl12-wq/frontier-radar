@@ -6,6 +6,7 @@ on:
       - 'scripts/**'
       - 'tests/**'
       - 'index.html'
+      - 'reader/**'
       - 'research_ui.js'
       - 'research.css'
       - 'data/curated_library.json'
