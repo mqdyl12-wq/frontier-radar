@@ -25,19 +25,19 @@ TERMS = (
 )
 AI_RE = re.compile(r"\b(?:AI[- ]mediated|generative AI|AIGC|large language model|LLMs?|chatbot|algorithmic|artificial intelligence|AI summar(?:y|ies|ization)|AI overviews?|generative search|GPT[- 0-9])\b", re.I)
 COMM_RE = re.compile(
-    r"\\b(?:communicat|social media|politic|public|news|journalis|discourse|discussion"
+    r"\b(?:communicat|social media|politic|public|news|journalis|discourse|discussion"
     r"|opinion|emotion|misinformation|summari|normative|participat|interperson"
     r"|search (?:engine|result|interface)|information (?:exposure|retrieval)"
-    r"|media (?:use|effect)|platform (?:governance|content))\\w*", re.I
+    r"|media (?:use|effect)|platform (?:governance|content))\w*", re.I
 )
 TECH_TITLE_RE = re.compile(
-    r"\\b(?:Gemini(?:\\s+\\d+)?|GPT(?:-\\d+)?|Claude|DeepSeek|Qwen|"
-    r"AI (?:search|overviews?|summar\\w*|discovery|for scientists|and children|"
+    r"\b(?:Gemini(?:\s+\d+)?|GPT(?:-\d+)?|Claude|DeepSeek|Qwen|"
+    r"AI (?:search|overviews?|summar\w*|discovery|for scientists|and children|"
     r"guidance|effect|research|models?|agents?)|generative|agents?|"
-    r"(?:embedded )?assessments?|evaluat\\w*|benchmarks?|"
-    r"news|journalis\\w*|media|reasoning|retrieval|RAG|multimodal|"
-    r"open[- ]weights?|scientists use|researchers?|AI[- ]mediated)\\b|"
-    r"\\bIntroducing ChatGPT\\b", re.I
+    r"(?:embedded )?assessments?|evaluat\w*|benchmarks?|"
+    r"news|journalis\w*|media|reasoning|retrieval|RAG|multimodal|"
+    r"open[- ]weights?|scientists use|researchers?|AI[- ]mediated)\b|"
+    r"\bIntroducing ChatGPT\b", re.I
 )
 FEEDS = (
     ("OpenAI 官方动态", "https://openai.com/news/rss.xml", "openai.com"),
