@@ -54,6 +54,17 @@ class TestFeed(unittest.TestCase):
                                   "openai.com", "2026-11-16")
         self.assertEqual(len(items), 1)
 
+    def test_relevance_filters(self):
+        self.assertTrue(mod.relevant_paper("AI-mediated communication in social media discussions"))
+        self.assertFalse(mod.relevant_paper(
+            "What Is a Source? In Search of Authorship: From Princess Diana’s Trademark to Generative AI"
+        ))
+        self.assertTrue(mod.relevant_tech("Introducing Gemini 4 Hydrogen"))
+        self.assertTrue(mod.relevant_tech("LVMH’s Media Division announces strategic partnership with OpenAI"))
+        self.assertFalse(mod.relevant_tech(
+            "Strengthening the fight against online child sexual abuse with new tools and support"
+        ))
+
     def test_preserves_old_feed_when_all_fail(self):
         with tempfile.TemporaryDirectory() as d:
             output = Path(d) / "feed.json"
