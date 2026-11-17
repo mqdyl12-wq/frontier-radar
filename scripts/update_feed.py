@@ -42,6 +42,7 @@ TECH_TITLE_RE = re.compile(
 FEEDS = (
     ("OpenAI 官方动态", "https://openai.com/news/rss.xml", "openai.com"),
     ("Google DeepMind 官方博客", "https://deepmind.google/blog/rss.xml", "deepmind.google"),
+    ("Google AI 官方博客", "https://blog.google/innovation-and-ai/technology/ai/rss/", "blog.google"),
 )
 
 def clean(text: str, limit: int = 400) -> str:
@@ -119,16 +120,30 @@ def fetch_arxiv(since: datetime) -> list[dict]:
         "search_query": query, "start": 0, "max_results": 100,
         "sortBy": "submittedDate", "sortOrder": "descending",
     })
-    root = ET.fromstring(request("https://export.arxiv.org/api/query?" + params))
+    try:
+        raw = request("https://export.arxiv.org/api/query?" + params)
+    except Exception as exc:
+        # arXiv documents official daily Atom feeds; useful if its search API is throttled.
+        print(f"WARNING arXiv search API unavailable: {exc}; trying daily category feed.",
+              file=sys.stderr)
+        time.sleep(3)  # arXiv requests must be separated by at least 3 seconds.
+        raw = request("https://rss.arxiv.org/atom/cs.SI")
+    root = ET.fromstring(raw)
+    if root.tag != ATOM + "feed":
+        raise ValueError("arXiv response is not an Atom feed")
     found = []
     for entry in root.findall(f"{ATOM}entry"):
         title = clean(entry.findtext(f"{ATOM}title"), 240)
         summary = clean(entry.findtext(f"{ATOM}summary"))
+        if not relevant_paper(title + " " + summary):
+            continue
         first = entry.findtext(f"{ATOM}published") or ""
         updated = entry.findtext(f"{ATOM}updated") or first
         if not updated or datetime.fromisoformat(updated.replace("Z", "+00:00")) < since:
             continue
         url = entry.findtext(f"{ATOM}id") or ""
+        if url.startswith("http://arxiv.org/abs/"):
+            url = "https://" + url.removeprefix("http://")
         if not url.startswith("https://arxiv.org/abs/"):
             continue
         authors = ", ".join(clean(a.findtext(f"{ATOM}name"), 80)
