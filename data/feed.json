@@ -1,8 +1,41 @@
 {
-  "date": "2026-11-18",
-  "checkedAt": "2026-11-18T01:25:23.499960+00:00",
-  "label": "自动收录 · 最近一次检索 2026-11-18 01:25 UTC",
+  "date": "2026-11-19",
+  "checkedAt": "2026-11-19T01:22:35.706594+00:00",
+  "label": "自动收录 · 最近一次检索 2026-11-19 01:22 UTC",
   "papers": [
+    {
+      "id": "p-3fbd0526e9419cfa14",
+      "title": "IntentGR: Enhancing Intent for End-to-End Personalized Generative Retrieval in Search",
+      "en": "IntentGR: Enhancing Intent for End-to-End Personalized Generative Retrieval in Search",
+      "authors": "Gefan Ye, Yanjing Wu, Yinfu Feng, Zhiqiang Wang, Liang Li, Jun Xiao",
+      "date": "2026-11-17",
+      "updatedAt": "2026-11-17",
+      "venue": "arXiv（预印本）",
+      "type": "工作论文",
+      "topic": [
+        "AI摘要"
+      ],
+      "public": false,
+      "researchThemes": [
+        "AI中介传播与AI信息中介",
+        "AI内容趋同"
+      ],
+      "relevance": "方法／理论参考",
+      "sourceTier": "预印本（非同行评议）",
+      "abstract": "Personalized generative retrieval in search should jointly satisfy the user's immediate search intent and long-term preference. Recent end-to-end approaches, primarily explored in recommendation, unify item tokenization and sequence generation within a single model, allowing semantic identifiers (SIDs) to be optimized toward the downstream generation objective. However, these methods often treat the query merely as an input feature, without explicitly leveraging it to guide either identifier learning or sequence generation. This leaves intent guidance weak in both the tokenization and the generation stage, causing generated semantic identifiers to drift toward high-frequency token patterns rather than the current search intent. In this work, we find that incorporating additional query-related evidence into the framework of end-to-end generative retrieval is important. Based on this finding, we propose IntentGR, an intent-enhanced end-to-end framework that strengthens query semantics at four complementary stages of the retrieval pipeline. Query-Aware Semantic Behavior Representation (QBR) introduces query-level behavioral evidence as a new input signal; Query-Semantic Alignment (QSA), Long-Tail Query Enrichment (LQE), and Query-conditioned Attention Modulation (QAM) then serve as integration mechanisms at the optimization, training-distribution, and decoding stages to fully exploit this evidence. Experiments on the public AOL4PS benchmark and AE, a large-scale industrial e-commerce dataset, show that IntentGR improves Recall@10 by 8.11% and 11.96% over the strongest baseline, with strong gains on long-tail queries. These results suggest that enriched query-related input evidence, together with effective integration mechanisms, is beneficial for building intent-aware end-to-end generative search systems.",
+      "analysisStatus": "待解读",
+      "method": "预印本，研究方法需核对全文。",
+      "question": "依据题名和摘要筛选，研究问题需进一步确认。",
+      "finding": "作者摘要（未核对全文）：Personalized generative retrieval in search should jointly satisfy the user's immediate search intent and long-term preference. Recent end-to-end approaches, primarily explored in recommendation, unify item tokenization and sequence generation within a single model, allowing semantic identifiers (SIDs) to be optimized toward the downstream generation objective. However, these methods often treat the query merely as an input feature, without explicitly leveraging it to guide either identifier learning or sequence generation. This leaves intent guidance weak in both the tokenization and the generation stage, causing generated semantic identifiers to drift toward high-frequency token patterns rather than the current search intent. In this work, we find that incorporating additional query-related evidence into the framework of end-to-end generative retrieval is important. Based on this finding, we propose IntentGR, an intent-enhanced end-to-end framework that strengthens query semantics at four complementary stages of the retrieval pipeline. Query-Aware Semantic Behavior Representation (QBR) introduces query-level behavioral evidence as a new input signal; Query-Semantic Alignment (QSA), Long-Tail Query Enrichment (LQE), and Query-conditioned Attention Modulation (QAM) then serve as integration mechanisms at the optimization, training-distribution, and decoding stages to fully exploit this evidence. Experiments on the public AOL4PS benchmark and AE, a large-scale industrial e-commerce dataset, show that IntentGR improves Recall@10 by 8.11% and 11.96% over the strongest baseline, with strong gains on long-tail queries. These results suggest that enriched query-related input evidence, together with effective integration mechanisms, is beneficial for building intent-aware end-to-end generative search systems.",
+      "scope": "arXiv 首次发布 2026-11-17，最新修订 2026-11-17；未核对全文。",
+      "significance": "候选研究；公共讨论属性尚未核查。",
+      "tags": [
+        "自动收录",
+        "预印本",
+        "待精读"
+      ],
+      "url": "https://arxiv.org/abs/2611.22788v1"
+    },
     {
       "id": "p-f5983c9ea501a8539b",
       "title": "How Developer Personality Shapes the Use of AI Coding Assistants",
@@ -413,6 +446,32 @@
   ],
   "tech": [
     {
+      "id": "t-a1de396d3910fa2e0f",
+      "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+      "date": "2026-11-18",
+      "source": "OpenAI 官方动态",
+      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Le Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT through summaries and excerpts, with links to original stories.",
+      "impact": "研究启发待补充；不能仅凭标题判断效果。",
+      "tags": [
+        "自动收录",
+        "官方动态"
+      ],
+      "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership"
+    },
+    {
+      "id": "t-0191a8cf5007a7e305",
+      "title": "The Gemini app is now available on lower-memory Android devices.",
+      "date": "2026-11-18",
+      "source": "Google AI 官方博客",
+      "excerpt": "官方 RSS 摘要（未阅读全文核对）：The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.",
+      "impact": "研究启发待补充；不能仅凭标题判断效果。",
+      "tags": [
+        "自动收录",
+        "官方动态"
+      ],
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
+    },
+    {
       "id": "t-8f6af8c44a4a1bfb5d",
       "title": "Introducing GPT-6.2 Astra and Sol",
       "date": "2026-11-17",
@@ -655,5 +714,7 @@
     "Google DeepMind 官方博客",
     "Google AI 官方博客"
   ],
-  "issues": []
+  "issues": [
+    "Google DeepMind 官方博客: not well-formed (invalid token): line 1, column 0"
+  ]
 }
