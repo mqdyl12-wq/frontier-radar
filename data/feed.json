@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-19",
-  "checkedAt": "2026-11-19T01:22:35.706594+00:00",
-  "label": "自动收录 · 最近一次检索 2026-11-19 01:22 UTC",
+  "date": "2026-11-20",
+  "checkedAt": "2026-11-20T01:16:30.247489+00:00",
+  "label": "自动收录 · 最近一次检索 2026-11-20 01:16 UTC",
   "papers": [
     {
       "id": "p-3fbd0526e9419cfa14",
@@ -446,6 +446,19 @@
   ],
   "tech": [
     {
+      "id": "t-056cf0b58a3dbace68",
+      "title": "Introducing Tool Retrieval in the Gemini API",
+      "date": "2026-11-19",
+      "source": "Google AI 官方博客",
+      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+      "impact": "研究启发待补充；不能仅凭标题判断效果。",
+      "tags": [
+        "自动收录",
+        "官方动态"
+      ],
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+    },
+    {
       "id": "t-a1de396d3910fa2e0f",
       "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
       "date": "2026-11-18",
@@ -470,6 +483,19 @@
         "官方动态"
       ],
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/"
+    },
+    {
+      "id": "t-fd9bebbff7e692862d",
+      "title": "Introducing Gemini 4 Neon",
+      "date": "2026-11-18",
+      "source": "Google DeepMind 官方博客",
+      "excerpt": "官方 RSS 摘要（未阅读全文核对）：摘要缺失，详见官方原文。",
+      "impact": "研究启发待补充；不能仅凭标题判断效果。",
+      "tags": [
+        "自动收录",
+        "官方动态"
+      ],
+      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/"
     },
     {
       "id": "t-8f6af8c44a4a1bfb5d",
@@ -714,7 +740,5 @@
     "Google DeepMind 官方博客",
     "Google AI 官方博客"
   ],
-  "issues": [
-    "Google DeepMind 官方博客: not well-formed (invalid token): line 1, column 0"
-  ]
+  "issues": []
 }
