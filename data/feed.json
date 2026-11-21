@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-20",
-  "checkedAt": "2026-11-20T01:16:30.247489+00:00",
-  "label": "自动收录 · 最近一次检索 2026-11-20 01:16 UTC",
+  "date": "2026-11-21",
+  "checkedAt": "2026-11-21T01:20:32.692453+00:00",
+  "label": "自动收录 · 最近一次检索 2026-11-21 01:20 UTC",
   "papers": [
     {
       "id": "p-3fbd0526e9419cfa14",
@@ -445,6 +445,19 @@
     }
   ],
   "tech": [
+    {
+      "id": "t-8145fefb47ff1ca9fa",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "date": "2026-11-20",
+      "source": "OpenAI 官方动态",
+      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Hebbia tested GPT-6 Astra for financial research. Its prerelease evaluations found gains in source coverage, citation relevance, and presentation quality.",
+      "impact": "研究启发待补充；不能仅凭标题判断效果。",
+      "tags": [
+        "自动收录",
+        "官方动态"
+      ],
+      "url": "https://openai.com/business/customer-stories/hebbia"
+    },
     {
       "id": "t-056cf0b58a3dbace68",
       "title": "Introducing Tool Retrieval in the Gemini API",
