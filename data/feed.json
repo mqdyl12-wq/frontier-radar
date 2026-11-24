@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-23",
-  "checkedAt": "2026-11-23T01:23:39.988435+00:00",
-  "label": "自动收录 · 最近一次检索 2026-11-23 01:23 UTC",
+  "date": "2026-11-24",
+  "checkedAt": "2026-11-24T01:20:57.073986+00:00",
+  "label": "自动收录 · 最近一次检索 2026-11-24 01:20 UTC",
   "papers": [
     {
       "id": "p-3fbd0526e9419cfa14",
@@ -445,6 +445,19 @@
     }
   ],
   "tech": [
+    {
+      "id": "t-895b540db6a8889e69",
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "date": "2026-11-23",
+      "source": "Google DeepMind 官方博客",
+      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+      "impact": "研究启发待补充；不能仅凭标题判断效果。",
+      "tags": [
+        "自动收录",
+        "官方动态"
+      ],
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/"
+    },
     {
       "id": "t-8145fefb47ff1ca9fa",
       "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
