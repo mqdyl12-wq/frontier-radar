@@ -1,8 +1,40 @@
 {
-  "date": "2026-11-24",
-  "checkedAt": "2026-11-24T01:20:57.073986+00:00",
-  "label": "自动收录 · 最近一次检索 2026-11-24 01:20 UTC",
+  "date": "2026-11-25",
+  "checkedAt": "2026-11-25T01:27:08.535961+00:00",
+  "label": "自动收录 · 最近一次检索 2026-11-25 01:27 UTC",
   "papers": [
+    {
+      "id": "p-890c96bb892779662e",
+      "title": "Ask Again: Answer-List Instability in Generative Engines",
+      "en": "Ask Again: Answer-List Instability in Generative Engines",
+      "authors": "Björn Busch-Geertsema, David Antony Selby, Sebastian Vollmer",
+      "date": "2026-11-23",
+      "updatedAt": "2026-11-23",
+      "venue": "arXiv（预印本）",
+      "type": "工作论文",
+      "topic": [
+        "AI摘要"
+      ],
+      "public": false,
+      "researchThemes": [
+        "AI中介传播与AI信息中介"
+      ],
+      "relevance": "方法／理论参考",
+      "sourceTier": "预印本（非同行评议）",
+      "abstract": "Visibility in generative search engines is measured by which entities appear in responses, and in what order. Ask an engine the same question twice and the answer list can change: a different ordering, or different items altogether. Across 60,000 responses, we find that answers to the same prompt name a different first item 32% of the time, and even two answers with the same items disagree on which comes first. The first position is a measurement target of its own. A \"clear leader\" emerges after seven or eight runs, which are the budgets recommended for brand and source monitoring, but a \"close leader\" only about half the time. After 25 runs, a close leader is identified only 60% of the time. Variability between engines is larger than within the same engine. For open-ended prompts, the gap is more than double that for determinate ones. Search queries and cited sites observed leave most of the disagreement unexplained. Visibility measurement should report, for each engine, which items appear and how often each comes first, each with its own quantification of uncertainty.",
+      "analysisStatus": "待解读",
+      "method": "预印本，研究方法需核对全文。",
+      "question": "依据题名和摘要筛选，研究问题需进一步确认。",
+      "finding": "作者摘要（未核对全文）：Visibility in generative search engines is measured by which entities appear in responses, and in what order. Ask an engine the same question twice and the answer list can change: a different ordering, or different items altogether. Across 60,000 responses, we find that answers to the same prompt name a different first item 32% of the time, and even two answers with the same items disagree on which comes first. The first position is a measurement target of its own. A \"clear leader\" emerges after seven or eight runs, which are the budgets recommended for brand and source monitoring, but a \"close leader\" only about half the time. After 25 runs, a close leader is identified only 60% of the time. Variability between engines is larger than within the same engine. For open-ended prompts, the gap is more than double that for determinate ones. Search queries and cited sites observed leave most of the disagreement unexplained. Visibility measurement should report, for each engine, which items appear and how often each comes first, each with its own quantification of uncertainty.",
+      "scope": "arXiv 首次发布 2026-11-23，最新修订 2026-11-23；未核对全文。",
+      "significance": "候选研究；公共讨论属性尚未核查。",
+      "tags": [
+        "自动收录",
+        "预印本",
+        "待精读"
+      ],
+      "url": "https://arxiv.org/abs/2611.30819v1"
+    },
     {
       "id": "p-3fbd0526e9419cfa14",
       "title": "IntentGR: Enhancing Intent for End-to-End Personalized Generative Retrieval in Search",
@@ -446,6 +478,45 @@
   ],
   "tech": [
     {
+      "id": "t-ac2f786b30f6d45772",
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "date": "2026-11-24",
+      "source": "OpenAI 官方动态",
+      "excerpt": "官方 RSS 摘要（未阅读全文核对）：GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.",
+      "impact": "研究启发待补充；不能仅凭标题判断效果。",
+      "tags": [
+        "自动收录",
+        "官方动态"
+      ],
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+    },
+    {
+      "id": "t-89a905d5eae9fa3ef5",
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "date": "2026-11-24",
+      "source": "OpenAI 官方动态",
+      "excerpt": "官方 RSS 摘要（未阅读全文核对）：摘要缺失，详见官方原文。",
+      "impact": "研究启发待补充；不能仅凭标题判断效果。",
+      "tags": [
+        "自动收录",
+        "官方动态"
+      ],
+      "url": "https://openai.com/business/customer-stories/ifood"
+    },
+    {
+      "id": "t-a7a0adf7d6c734e350",
+      "title": "How Gemini is changing the game for Golden State's organization and fans.",
+      "date": "2026-11-24",
+      "source": "Google AI 官方博客",
+      "excerpt": "官方 RSS 摘要（未阅读全文核对）：Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.",
+      "impact": "研究启发待补充；不能仅凭标题判断效果。",
+      "tags": [
+        "自动收录",
+        "官方动态"
+      ],
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/"
+    },
+    {
       "id": "t-895b540db6a8889e69",
       "title": "Finding faster quantum algorithms with agents and formal verification",
       "date": "2026-11-23",
@@ -766,5 +837,7 @@
     "Google DeepMind 官方博客",
     "Google AI 官方博客"
   ],
-  "issues": []
+  "issues": [
+    "Google DeepMind 官方博客: not well-formed (invalid token): line 1, column 0"
+  ]
 }
