@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-25",
-  "checkedAt": "2026-11-25T01:27:08.535961+00:00",
-  "label": "自动收录 · 最近一次检索 2026-11-25 01:27 UTC",
+  "date": "2026-11-26",
+  "checkedAt": "2026-11-26T01:26:28.423631+00:00",
+  "label": "自动收录 · 最近一次检索 2026-11-26 01:26 UTC",
   "papers": [
     {
       "id": "p-890c96bb892779662e",
@@ -837,7 +837,5 @@
     "Google DeepMind 官方博客",
     "Google AI 官方博客"
   ],
-  "issues": [
-    "Google DeepMind 官方博客: not well-formed (invalid token): line 1, column 0"
-  ]
+  "issues": []
 }
